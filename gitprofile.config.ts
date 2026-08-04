@@ -47,6 +47,7 @@ const CONFIG = {
   social: {
     instagram: '',
     udemy: 'Daniel Andrade Martins',
+    website: 'what',
     discord: 'd_4n1ei',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
@@ -115,7 +116,7 @@ const CONFIG = {
       rel="noreferrer"
     >GitProfile</a> and ❤️`,
 
-  enablePWA: true,
+  enablePWA: false,
 };
 
 export default CONFIG;
