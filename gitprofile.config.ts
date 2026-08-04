@@ -36,7 +36,7 @@ const CONFIG = {
           title: 'Slime Slayer',
           description:
             'Small and simple game built with TypeScript and Three.js',
-         imageUrl: '/gitprofile/images/slimeslayer.png',
+         imageUrl: '/images/slimeslayer.png',
           link:
             'https://github.com/D4n1eii/Computer-Graphics-With-Three-Js',
         },
