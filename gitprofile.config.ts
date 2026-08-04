@@ -51,6 +51,7 @@ const CONFIG = {
     discord: 'd_4n1ei',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/daniel-martins-3046723b4/'
   },
   resume: {
     fileUrl:
