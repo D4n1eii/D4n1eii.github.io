@@ -84,7 +84,10 @@ export const getSanitizedConfig = (
         discord: config?.social?.discord,
       },
       resume: {
-        fileUrl: config?.resume?.fileUrl || '',
+        fileUrl: config?.resume?.fileUrl
+          ? new URL(config.resume.fileUrl, window.location.origin + CONFIG.base)
+              .href
+          : '',
       },
       skills: config?.skills || [],
       experiences:

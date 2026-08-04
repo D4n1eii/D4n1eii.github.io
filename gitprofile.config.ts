@@ -1,5 +1,7 @@
 // gitprofile.config.ts
 
+const BASE = '/';
+
 const CONFIG = {
   github: {
     username: 'D4n1eii', // Your GitHub org/user name. (This is the only required config)
@@ -9,7 +11,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/',
+  base: BASE,
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -43,19 +45,18 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Daniel', description: '', imageURL: '' },
+  seo: { title: 'Daniel Andrade', description: 'Portfolio', imageURL: '' },
   social: {
     instagram: '',
-    udemy: 'Daniel Andrade Martins',
+    udemy: 'daniel-andrade-martins-2',
     website: 'https://d4n1eii.github.io/',
     discord: 'd_4n1ei',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/daniel-martins-3046723b4/'
+    linkedin: 'daniel-martins-3046723b4'
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'resume.pdf',
   },
   skills: [
     'C++',
@@ -64,7 +65,8 @@ const CONFIG = {
     'JavaScript',
     'SQL',
     'Git',
-    'Github'
+    'Github',
+    'Docker',
   ],
   experiences: [],
   certifications: [],
@@ -89,7 +91,7 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'night',
+    defaultTheme: 'light',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -106,7 +108,7 @@ const CONFIG = {
     themes: [
       'dark',
       'night',
-      
+      'light',
     ],
   },
 

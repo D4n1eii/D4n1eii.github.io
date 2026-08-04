@@ -24,6 +24,33 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   avatarRing,
   resumeFileUrl,
 }): React.JSX.Element => {
+  const handleResumeDownload = async (
+    event: React.MouseEvent<HTMLAnchorElement>,
+  ): Promise<void> => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch(resumeFileUrl as string);
+
+      if (!response.ok) {
+        throw new Error('Unable to fetch resume file');
+      }
+
+      const file = await response.blob();
+      const objectUrl = window.URL.createObjectURL(file);
+      const link = document.createElement('a');
+
+      link.href = objectUrl;
+      link.download = 'resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(objectUrl);
+    } catch (error) {
+      window.location.href = resumeFileUrl as string;
+    }
+  };
+
   return (
     <div className="card shadow-lg card-sm bg-base-100">
       <div className="grid place-items-center py-8">
@@ -84,10 +111,9 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
           ) : (
             <a
               href={resumeFileUrl}
-              target="_blank"
               className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
               download
-              rel="noreferrer"
+              onClick={handleResumeDownload}
             >
               Download Resume
             </a>
