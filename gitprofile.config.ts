@@ -50,7 +50,6 @@ const CONFIG = {
     instagram: '',
     udemy: 'daniel-andrade-martins-2',
     website: 'https://d4n1eii.github.io/',
-    discord: 'd_4n1ei',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
     linkedin: 'daniel-martins-3046723b4'
