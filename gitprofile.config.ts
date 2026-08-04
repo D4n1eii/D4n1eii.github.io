@@ -47,7 +47,7 @@ const CONFIG = {
   social: {
     instagram: '',
     udemy: 'Daniel Andrade Martins',
-    website: 'what',
+    website: 'https://d4n1eii.github.io/',
     discord: 'd_4n1ei',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
