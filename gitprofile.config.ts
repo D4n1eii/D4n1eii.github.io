@@ -65,7 +65,7 @@ const CONFIG = {
     'SQL',
     'Git',
     'Github',
-    'Docker',
+
   ],
   experiences: [],
   certifications: [],
