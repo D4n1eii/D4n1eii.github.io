@@ -72,7 +72,7 @@ const CONFIG = {
   educations: [
     {
       institution: 'Universidade de Aveiro',
-      degree: 'Bachelor in Informatics Engineering',
+      degree: 'Bachelors in Informatics Engineering',
       from: '2023',
       to: '2026',
     },
