@@ -11,6 +11,7 @@ import {
   FaDev,
   FaFacebook,
   FaGlobe,
+  FaLink,
   FaLinkedin,
   FaMastodon,
   FaReddit,
@@ -332,6 +333,22 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                     !social.website.startsWith('http')
                       ? `http://${social.website}`
                       : social.website
+                  }
+                />
+              )}
+              {social?.linktree && (
+                <ListItem
+                  icon={<FaLink />}
+                  title="Linktree:"
+                  value={social.linktree
+                    .replace('https://', '')
+                    .replace('http://', '')
+                    .replace(/^linktr\.ee\//, '')
+                    .replace(/^www\./, '')}
+                  link={
+                    !social.linktree.startsWith('http')
+                      ? `https://linktr.ee/${social.linktree.replace(/^https?:\/\//, '').replace(/^linktr\.ee\//, '').replace(/^www\./, '')}`
+                      : social.linktree
                   }
                 />
               )}

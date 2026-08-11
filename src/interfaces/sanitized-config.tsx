@@ -59,6 +59,7 @@ export interface SanitizedSocial {
   dev?: string;
   stackoverflow?: string;
   website?: string;
+  linktree?: string;
   telegram?: string;
   phone?: string;
   email?: string;

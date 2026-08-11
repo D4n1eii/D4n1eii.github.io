@@ -77,6 +77,7 @@ export const getSanitizedConfig = (
         dev: config?.social?.dev,
         stackoverflow: config?.social?.stackoverflow,
         website: config?.social?.website,
+        linktree: config?.social?.linktree,
         phone: config?.social?.phone,
         email: config?.social?.email,
         telegram: config?.social?.telegram,

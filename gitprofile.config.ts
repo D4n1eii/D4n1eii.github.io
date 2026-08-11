@@ -52,7 +52,8 @@ const CONFIG = {
     website: 'https://d4n1eii.github.io/',
     phone: '+351 924 490 396',
     email: 'daniel.andrade.martinsdd123bse@gmail.com',
-    linkedin: 'daniel-martins-3046723b4'
+    linkedin: 'daniel-martins-3046723b4',
+    linktree: 'https://linktr.ee/d4n1eii'
   },
   resume: {
     fileUrl: 'resume.pdf',
@@ -90,7 +91,7 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
