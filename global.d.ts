@@ -188,6 +188,11 @@ interface Social {
   website?: string;
 
   /**
+   * Linktree URL
+   */
+  linktree?: string;
+
+  /**
    * Telegram username
    */
   telegram?: string;
